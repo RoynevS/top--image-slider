@@ -3,7 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
+    <title>Image Slider</title>
   </head>
-  <body></body>
+  <body>
+    <div class="picture-frame">
+      <button class="previous">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <title>arrow-left-box</title>
+          <path
+            d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5C3,3.89 3.9,3 5,3H19M18,11H9.5L13,7.5L11.58,6.08L5.66,12L11.58,17.92L13,16.5L9.5,13H18V11Z"
+          />
+        </svg>
+      </button>
+      <div class="picture">
+        <img class="slide" src="../src/images/picture1.jpg" alt="Image #1" />
+        <img class="slide" src="../src/images/picture2.jpg" alt="Image #2" />
+        <img class="slide" src="../src/images/picture3.jpg" alt="Image #3" />
+        <div class="nav-btn-list">
+          <button class="nav-btn slide-1"></button>
+          <button class="nav-btn slide-2"></button>
+          <button class="nav-btn slide-3"></button>
+        </div>
+      </div>
+      <button class="next">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <title>arrow-right-box</title>
+          <path
+            d="M5,21A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V19C21,20.11 20.1,21 19,21H5M6,13H14.5L11,16.5L12.42,17.92L18.34,12L12.42,6.08L11,7.5L14.5,11H6V13Z"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
 </html>
